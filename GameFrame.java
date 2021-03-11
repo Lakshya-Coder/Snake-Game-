@@ -11,8 +11,6 @@ public class GameFrame extends JFrame implements ActionListener {
     ImageIcon tick_icon = new ImageIcon("tick.png");
     ImageIcon cross_icon = new ImageIcon("cross.png");
 
-    GamePanel panel = null;
-
     JLabel label = new JLabel("Chose the speed of the snake!");
 
     GameFrame() {
