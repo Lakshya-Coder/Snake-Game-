@@ -4,10 +4,12 @@ import java.awt.event.*;
 
 public class GameFrame extends JFrame implements ActionListener {
 
+    // Radio buttons
     JRadioButton high;
     JRadioButton medium;
     JRadioButton slow;
 
+    // Image icons
     ImageIcon tick_icon = new ImageIcon("tick.png");
     ImageIcon cross_icon = new ImageIcon("cross.png");
 
