@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.text.AttributeSet.ColorAttribute;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -9,14 +11,16 @@ public class GameFrame extends JFrame implements ActionListener {
     JRadioButton medium;
     JRadioButton slow;
 
+    JButton button_ext = new JButton("EXIT");
+
     // Image icons
     ImageIcon tick_icon = new ImageIcon("tick.png");
     ImageIcon cross_icon = new ImageIcon("cross.png");
 
+    // Label
     JLabel label = new JLabel("Chose the speed of the snake!");
 
     GameFrame() {
-
         label.setHorizontalAlignment(JRadioButton.CENTER);
         label.setVerticalAlignment(JRadioButton.CENTER);
         label.setFont(new Font("Ink Free", Font.BOLD, 20));
