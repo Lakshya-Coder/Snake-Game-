@@ -32,7 +32,7 @@ public class GamePanel extends JPanel implements ActionListener {
     Timer timer;
     Random random;
 
-    GamePanel(int x) {
+    GamePanel(String name, int x) {
         DELAY = x;
 
         random = new Random();
@@ -42,7 +42,7 @@ public class GamePanel extends JPanel implements ActionListener {
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
 
-        frame.setTitle("Snake Game");
+        frame.setTitle(name + " Snake Game");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.add(this);

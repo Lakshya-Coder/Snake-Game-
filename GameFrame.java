@@ -96,7 +96,7 @@ public class GameFrame extends JFrame implements ActionListener {
             switch (x) {
                 case 0:
                     this.dispose();
-                    new GamePanel(50);
+                    new GamePanel("High", 50);
                     break;
                 default:
                     break;
@@ -109,7 +109,7 @@ public class GameFrame extends JFrame implements ActionListener {
             switch (x) {
                 case 0:
                     this.dispose();
-                    new GamePanel(80);
+                    new GamePanel("Medium", 80);
                     break;
                 default:
                     break;
@@ -122,7 +122,7 @@ public class GameFrame extends JFrame implements ActionListener {
             switch (x) {
                 case 0:
                     this.dispose();
-                    new GamePanel(150);
+                    new GamePanel("Slow", 150);
                     break;
                 default:
                     break;
